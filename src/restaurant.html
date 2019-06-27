@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <script text="text/javascript" src="restaurant.js"></script>
+    <h1>FRIES REPUBLIC</h1>
+</head>
+<p>
+    TABLES
+    <br>
+    <div class="row">
+        <div class="column">
+            <input type="text" id="myTableSearch" onkeyUp="myTablesSearchFunc()" placeholder="Search for tables">
+            <ul id="myTables">
+                <li><div id="Table1" onclick="showPopUp(this.id)" ondrop="drop(event)" ondragover="allowDrop(event)" >Table1
+<p id="p0">Rs:0  Total items:0</p></div>
+</li><br>
+<li><div id="Table2" onclick="showPopUp(this.id)" ondrop="drop(event)" ondragover="allowDrop(event)">Table2
+    <p id="p1">Rs:0  Total items:0</p></div>
+</li><br>
+<li><div id="Table3" onclick="showPopUp(this.id)" ondrop="drop(event)" ondragover="allowDrop(event)">Table3
+    <p id="p2">Rs:0  Total items:0</p></div>
+</li><br>
+</ul>
+</p></div>
+MENU
+<br>
+<div class="column">
+    <input type="text" id="myMenuSearch" onkeyUp="myMenuSearchFunc()" placeholder="Search for course,item.....">
+    <ul id="myMenu">
+        <li id="French Fries" draggable="true" ondragstart="drag(event)">FrenchFries<br><br> 105<br></li>
+        <br><li id="French Fries with jalapenos" draggable="true" ondragstart="drag(event)">French Fries with jalapenos<br><br> 120<br></li>
+        <br><li id="Garlic Fries" draggable="true" ondragstart="drag(event)">Garlic Fries<br><br> 120<br></li>
+        <br><li id="Choclate Fries" draggable="true" ondragstart="drag(event)">Choclate Fries<br><br> 135<br></li>
+        <br><li id="Home Country Fries" draggable="true" ondragstart="drag(event)">Home Country Fries<br><br> 150<br></li>
+        <br><li id="French Fries with cheese and jalapenos" draggable="true" ondragstart="drag(event)">French Fries with cheese and jalapenos<br><br> 150<br></li>
+    </ul>
+</div>
+</div>
+<div class="popup"></div><div class="popuptext" id="myPopUp" >
+</div></div>
+</body>
+</html>
